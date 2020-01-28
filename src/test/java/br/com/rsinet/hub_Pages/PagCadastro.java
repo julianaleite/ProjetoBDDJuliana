@@ -13,11 +13,7 @@ public class PagCadastro {
 
 	WebDriver driver;
 	
-	@FindBy(how = How.ID, using = "menuUser")
-	private WebElement campoLogin;
-	
-	@FindBy(how = How.LINK_TEXT, using = "CREATE NEW ACCOUNT")
-	private WebElement campoCriarConta;
+
 	
 	@FindBy(how = How.NAME, using = "usernameRegisterPage")
 	private WebElement campoNome;
