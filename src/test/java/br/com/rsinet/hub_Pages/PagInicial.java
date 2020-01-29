@@ -1,6 +1,7 @@
 package br.com.rsinet.hub_Pages;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,10 +32,13 @@ public class PagInicial {
 	}
 
 	public void criarConta() {
-		WebDriverWait wait = new WebDriverWait(driver,10);
-		wait.until(ExpectedConditions.elementToBeClickable(campoCriarConta));
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].click();", campoCriarConta);
+		//WebDriverWait wait = new WebDriverWait(driver,20);
+		//wait.until(ExpectedConditions.elementToBeClickable(campoCriarConta));
+		campoCriarConta.click();
+		//WebDriverWait wait = new WebDriverWait(driver,20);
+		//wait.until(ExpectedConditions.elementToBeClickable(campoCriarConta));
+		//JavascriptExecutor executor = (JavascriptExecutor)driver;
+		//executor.executeScript("arguments[4].click();", campoCriarConta);
 		
 	}
 }

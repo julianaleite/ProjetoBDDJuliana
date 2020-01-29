@@ -2,6 +2,7 @@ package br.com.rsinet.hub_stepDefinition;
 
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import br.com.rsinet.hub.utility.DriverFactoryBDD;
 import br.com.rsinet.hub_Pages.PagCadastro;
@@ -21,6 +22,8 @@ public class CriarUsuario {
 	@Given("^Carregamento dos dados$")
 	public void user_is_on_Home_Page() throws Throwable {
 		driver = DriverFactoryBDD.getDriver();
+		telalogin = PageFactory.initElements(driver, PagInicial.class);
+		telacadastro = PageFactory.initElements(driver, PagCadastro.class);
 	}
 	@When("^Usuario Navegue para pagina Login$")
 	public void login_Page() throws Throwable {
@@ -28,7 +31,7 @@ public class CriarUsuario {
 	}
 	
 
-	@When("Usuario crie uma conta")
+	@When("^Usuario crie uma conta$")
 	public void criar_Conta() throws Throwable {
 		telalogin.criarConta();
 

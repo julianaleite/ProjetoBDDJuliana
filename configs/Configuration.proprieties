@@ -1,0 +1,3 @@
+driverPath=C:\\DriversQA\\chromedriver.exe
+implicityQait = 10
+url = https://www.advantageonlineshopping.com/#/
