@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
-import br.com.rsinet.hub.utility.Log;
+//import br.com.rsinet.hub.utility.Log;
 
 public class PagCadastro {
 
@@ -62,7 +62,7 @@ public class PagCadastro {
 	}
 	
 	public void digitaEmail (String email) {
-		campoSenha.sendKeys(email);
+		campoEmail.sendKeys(email);
 	}
 	public void digitaSenha (String senha) {
 		campoSenha.sendKeys(senha);

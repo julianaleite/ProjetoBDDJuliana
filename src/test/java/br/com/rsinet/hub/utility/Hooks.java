@@ -1,5 +1,5 @@
 package br.com.rsinet.hub.utility;
-
+/*
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
@@ -22,4 +22,4 @@ public class Hooks {
         System.out.println("This will run after the every Scenario");
     }	
 
-}
+} */

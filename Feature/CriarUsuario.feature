@@ -1,24 +1,23 @@
-Feature: Cadastro Usuario 
+Feature: Cadastro Usuario
 
-
-Scenario: Login bem-sucedido com credenciais válidas 
-	Given  Carregamento dos dados 
-	When Usuario Navegue para pagina Login 
-	When Usuario crie uma conta 
-	When Digite seu nome 
-	When Digite seu email 
-	When Digite sua senha senha 
-	When Confirmar sua senha 
-	When Digite Primeiro Nome 
-	When Digite Segundo Nome 
-	When Digite seu Telefone 
-	When Escolher Pais 
-	When Digite sua Cidade 
-	When Digite O Endereco 
-	When Digite Codigo Postal 
-	When Clique no Botao Permitir Oferta 
-	When Clique no Botao Permitir Condicao 
-	Then Clique no Botao Resgistrar usuario 
+Scenario: Login bem-sucedido com credenciais validas
+	Given  Carrega os dados
+	When Usuario Navegue para pagina Login
+	And Usuario crie uma conta
+	And Digite seu nome
+	And Digite seu email
+	And Digite sua senha senha
+	And Confirmar sua senha
+	And Digite Primeiro Nome
+	And Digite Segundo Nome
+	And Digite seu Telefone
+	And Escolher Pais
+	And Digite sua Cidade
+	And Digite O Endereco
+	And Digite Codigo Postal
+	And Clique no Botao Permitir Oferta
+	And Clique no Botao Permitir Condicao
+	Then Clique no Botao Resgistrar usuario
 	
 	
 

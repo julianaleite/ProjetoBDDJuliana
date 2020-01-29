@@ -14,12 +14,12 @@ public class PesquisarProdutoLupa {
 
 	public static WebDriver driver;
 
-	@Given("^Carregamento dos dados$")
-	public void user_is_on_Home_Page() throws Throwable {
+	@Given("^Carrega driverfactory$")
+	public void DriveFactory() throws Throwable {
 		driver = DriverFactoryBDD.getDriver();
 	}
 
-	@When("^Clicar na Lupa $")
+	@When("^Clicar na Lupa$")
 	public void clicar_lupa() throws Throwable {
 		telapesquisa.ClicarLupa();
 	}

@@ -1,7 +1,7 @@
 Feature: Pesquisa Lupa
 
 Scenario: pesquisar produto na lupa 
-	Given Carregamento dos dados
+	Given Carrega driverfactory
 	When Clicar na Lupa
 	When Escrever na lupa 
 	Then Produto Escolhido

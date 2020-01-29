@@ -1,16 +1,15 @@
 package br.com.rsinet.hub_stepDefinition;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import br.com.rsinet.hub.utility.DriverFactoryBDD;
 import br.com.rsinet.hub_Pages.PagCadastro;
 import br.com.rsinet.hub_Pages.PagInicial;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
 
 public class CriarUsuario {
 
@@ -19,99 +18,99 @@ public class CriarUsuario {
 
 	public static WebDriver driver;
 
-	@Given("^Carregamento dos dados$")
-	public void user_is_on_Home_Page() throws Throwable {
+	@Given("^Carrega os dados$")
+	public void carrega_os_dados() throws Throwable {
 		driver = DriverFactoryBDD.getDriver();
 		telalogin = PageFactory.initElements(driver, PagInicial.class);
 		telacadastro = PageFactory.initElements(driver, PagCadastro.class);
 	}
+
 	@When("^Usuario Navegue para pagina Login$")
-	public void login_Page() throws Throwable {
+	public void usuario_navegue_para_pagina_login() throws Throwable {
 		telalogin.CriarLogin();
 	}
-	
 
-	@When("^Usuario crie uma conta$")
+	@And("^Usuario crie uma conta$")
 	public void criar_Conta() throws Throwable {
 		telalogin.criarConta();
 
 	}
 
-	@When("^Digite seu nome$")
+	@And("^Digite seu nome$")
 	public void digite_seu_nome() throws Throwable {
 		String nome = "Juliana";
 		telacadastro.digitaNome(nome);
 
 	}
 
-	@When("^Digite seu email$")
+	@And("^Digite seu email$")
 	public void digite_seu_email() throws Throwable {
 		String email = "juliana.silva@teste.com.br";
-		telacadastro.digitaNome(email);
+		telacadastro.digitaEmail(email);
 
 	}
 
-	@When("^Digite sua senha senha$")
+	@And("^Digite sua senha senha$")
 	public void digite_sua_senha_senha() throws Throwable {
 		String senha = "1213Ju";
-		telacadastro.digitaNome(senha);
+		telacadastro.digitaSenha(senha);
 	}
 
-	@When("^Confirmar sua senha$")
+	@And("^Confirmar sua senha$")
 	public void confirmar_sua_senha() throws Throwable {
 		String confirSenha = "1213Ju";
-		telacadastro.digitaNome(confirSenha);
+		telacadastro.confirmarSenha(confirSenha);
 	}
 
-	@When("^Digite Primeiro Nome$")
+	@And("^Digite Primeiro Nome$")
 	public void digite_seu_Primeiro_Nome() throws Throwable {
 		String primeiroNome = "juliana";
-		telacadastro.digitaNome(primeiroNome);
+		telacadastro.digitaPrimeiroNome(primeiroNome);
 	}
 
-	@When("^Digite Segundo Nome$")
+	@And("^Digite Segundo Nome$")
 	public void digite_seu_Segundo_Nome() throws Throwable {
 		String segundoNome = "Silva";
-		telacadastro.digitaNome(segundoNome);
+		telacadastro.digitaSegundoNome(segundoNome);
 	}
 
-	@When("^Digite seu Telefone$")
+	@And("^Digite seu Telefone$")
 	public void digite_seu_Telefone() throws Throwable {
 		String telefone = "987654321";
-		telacadastro.digitaNome(telefone);
+		telacadastro.digitaTelefone(telefone);
 	}
 
-	@When("^Escolher Pais$")
+	@And("^Escolher Pais$")
 	public void escolher_Pais() throws Throwable {
 		String pais = "Brazil";
-		telacadastro.digitaNome(pais);
+		telacadastro.escolherPais(pais);
 	}
 
-	@When("^Digite sua Cidade$")
+	@And("^Digite sua Cidade$")
 	public void digite_sua_Cidade() throws Throwable {
 		String cidade = "Barueri";
-		telacadastro.digitaNome(cidade);
+		telacadastro.digitarCidade(cidade);
 	}
 
-	@When("^Digite O Endereco$")
+	@And("^Digite O Endereco$")
 	public void digite_seu_Endereco() throws Throwable {
 		String endereco = "Rua mar do teste";
-		telacadastro.digitaNome(endereco);
+		telacadastro.digitandereco(endereco);
 	}
 
-	@When("^Digite Codigo Postal$")
+	@And("^Digite Codigo Postal$")
 	public void digite_Codigo_Postal() throws Throwable {
 		String codigo = "654321";
-		telacadastro.digitaNome(codigo);
+		telacadastro.digitaCodigoPostal(codigo);
 	}
 
-	@When("^Clique no Botao Permitir Oferta$")
+	@And("^Clique no Botao Permitir Oferta$")
 	public void clique_no_Botao_Permitir_Oferta() throws Throwable {
 		telacadastro.permitirOferta();
 
 	}
 
-	@When("^Clique no Botao Permitir Condicao$")
+	@And("^Clique no Botao Permitir Condicao$")
 	public void permitirCondicao() throws Throwable {
 		telacadastro.AceitarCondicao();
 	}

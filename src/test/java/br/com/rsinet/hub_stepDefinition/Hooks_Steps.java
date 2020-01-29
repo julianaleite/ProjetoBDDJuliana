@@ -3,7 +3,7 @@ package br.com.rsinet.hub_stepDefinition;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
+/*
 public class Hooks_Steps {	
 	@Given("^Carregamento dos dados$")
 	public void carregandoDados (){
@@ -45,4 +45,4 @@ public class Hooks_Steps {
 	@When("^Digite Segundo Nome$")
 	public void digitandoSegundoNome (){
 		System.out.println(" Usuario Digitando Segundo Nome");
-}
+} */
