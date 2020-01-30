@@ -1,9 +1,12 @@
 package br.com.rsinet.hub_stepDefinition;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import br.com.rsinet.hub.utility.DriverFactoryBDD;
+import br.com.rsinet.hub_Pages.PagInicial;
 import br.com.rsinet.hub_Pages.PagPesquisa;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -17,6 +20,7 @@ public class PesquisarProdutoLupa {
 	@Given("^Carrega driverfactory$")
 	public void carregar_driverfactory() throws Throwable {
 		driver = DriverFactoryBDD.getDriver();
+		telapesquisa = PageFactory.initElements(driver, PagPesquisa.class);
 	}
 
 	@When("^Clicar na Lupa$")
@@ -24,7 +28,7 @@ public class PesquisarProdutoLupa {
 		telapesquisa.ClicarLupa();
 	}
 
-	@When("^Escrever na lupa$")
+	@And("^Escrever na lupa$")
 	public void escrever_na_lupa() throws Throwable {
 		telapesquisa.EscreverProduto();
 	}

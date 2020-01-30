@@ -1,5 +1,5 @@
 package br.com.rsinet.hub_dadaProvider;
-
+/*
 public class ConfigFileReader {
 	
 	 private pro properties;
@@ -7,3 +7,4 @@ public class ConfigFileReader {
 	 private final String propertyFilePath= "C:\\Users\\juliana.silva\\Desktop\\workspace-nova\\ProjetoBDDJuliana\\configs\\";
 
 }
+*/

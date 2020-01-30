@@ -1,5 +1,6 @@
 Feature: Cadastro Usuario
 
+@CadastraUsuario
 Scenario: Login bem-sucedido com credenciais validas
 	Given  Carrega os dados
 	When Usuario Navegue para pagina Login

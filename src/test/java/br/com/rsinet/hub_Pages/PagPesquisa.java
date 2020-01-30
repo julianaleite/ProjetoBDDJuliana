@@ -19,7 +19,7 @@ public class PagPesquisa {
 		
 		
 	}
-@FindBy(how = How.ID, using = "menuUser")
+@FindBy(how = How.ID, using = "menuSearch")
 private WebElement campoclicarnalupa;
 
 @FindBy(how = How.ID, using = "autoComplete")

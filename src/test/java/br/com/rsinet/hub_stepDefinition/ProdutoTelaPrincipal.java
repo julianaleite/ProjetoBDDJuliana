@@ -1,8 +1,10 @@
 package br.com.rsinet.hub_stepDefinition;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import br.com.rsinet.hub.utility.DriverFactoryBDD;
+import br.com.rsinet.hub_Pages.PagPesquisa;
 import br.com.rsinet.hub_Pages.PagProdutoTelaPrincipal;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,6 +19,7 @@ public class ProdutoTelaPrincipal {
 	@Given("^Carregando os Dados$")
 	public void carregando_os_dados() throws Throwable {
 		driver = DriverFactoryBDD.getDriver();
+		telaproduto = PageFactory.initElements(driver, PagProdutoTelaPrincipal.class);
 	}
 
 	@When("^Clicar no Mouse$")

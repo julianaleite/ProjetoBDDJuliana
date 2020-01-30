@@ -6,7 +6,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "Feature", glue = "br.com.rsinet.hub_stepDefinition")
+@CucumberOptions(features = { "Feature/CriarUsuario.feature",
+		"Feature/TestePesquisaLupa.feature" }, glue = "br.com.rsinet.hub_stepDefinition", tags = "@CadastraUsuario,@PesquisaLupa")
 
 public class TestRunner {
 

@@ -1,8 +1,9 @@
 Feature: Pesquisa Lupa
 
+@PesquisaLupa
 Scenario: pesquisar produto na lupa 
 	Given Carrega driverfactory
 	When Clicar na Lupa
-	When Escrever na lupa 
+	And Escrever na lupa 
 	Then Produto Escolhido
 
