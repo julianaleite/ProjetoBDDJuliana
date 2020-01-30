@@ -29,5 +29,9 @@ public class ProdutoTelaPrincipal {
 		telaproduto.escolherMouses();
 
 	}
+	@Then("^fechar guia $")
+	public void fechar_guia() throws Throwable{
+		driver = DriverFactoryBDD.quitDriver();
 
+}
 }

@@ -15,6 +15,7 @@ public class CriarUsuario {
 
 	PagCadastro telacadastro;
 	PagInicial telalogin;
+	
 
 	public static WebDriver driver;
 
@@ -38,14 +39,14 @@ public class CriarUsuario {
 
 	@And("^Digite seu nome$")
 	public void digite_seu_nome() throws Throwable {
-		String nome = "Juliana";
+		String nome = "Andressa";
 		telacadastro.digitaNome(nome);
 
 	}
 
 	@And("^Digite seu email$")
 	public void digite_seu_email() throws Throwable {
-		String email = "juliana.silva@teste.com.br";
+		String email = "Andressa.silva@teste.com.br";
 		telacadastro.digitaEmail(email);
 
 	}
@@ -64,7 +65,7 @@ public class CriarUsuario {
 
 	@And("^Digite Primeiro Nome$")
 	public void digite_seu_Primeiro_Nome() throws Throwable {
-		String primeiroNome = "juliana";
+		String primeiroNome = "Andressa";
 		telacadastro.digitaPrimeiroNome(primeiroNome);
 	}
 
@@ -118,6 +119,11 @@ public class CriarUsuario {
 	@Then("^Clique no Botao Resgistrar usuario$")
 	public void clique_no_Botao_Resgistrar_usuario() throws Throwable {
 		telacadastro.registrarNome();
+	}
+		@Then("^fechar guia url$")
+	public void fechar_guia_url() throws Throwable{
+		driver = DriverFactoryBDD.quitDriver();
+		
 	}
 
 }

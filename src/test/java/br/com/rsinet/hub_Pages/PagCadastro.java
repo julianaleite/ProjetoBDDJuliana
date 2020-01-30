@@ -57,6 +57,7 @@ public class PagCadastro {
 	@FindBy(how = How.ID, using = "register_btnundefined")
 	private WebElement campoRegistra;
 	
+	
 	public void digitaNome (String nome) {
 		campoNome.sendKeys(nome);
 	}

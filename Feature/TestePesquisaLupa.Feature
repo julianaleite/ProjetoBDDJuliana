@@ -5,3 +5,4 @@ Scenario: pesquisar produto na lupa
 	When Clicar na Lupa
 	When Escrever na lupa 
 	Then Produto Escolhido
+

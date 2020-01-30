@@ -19,5 +19,17 @@ public class DriverFactoryBDD {
 
 			return driver;
 		}
-	}
+	
 
+public static WebDriver quitDriver() {
+
+	// Checa se o driver existe antes de destruir.
+
+	if (driver != null) {
+		driver.quit();
+		driver = null;
+	}
+	return driver;
+}
+
+}

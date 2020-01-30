@@ -18,6 +18,11 @@ Scenario: Login bem-sucedido com credenciais validas
 	And Clique no Botao Permitir Oferta
 	And Clique no Botao Permitir Condicao
 	Then Clique no Botao Resgistrar usuario
+	Then fechar guia url
+	
+	
+	
+	
 	
 	
 
